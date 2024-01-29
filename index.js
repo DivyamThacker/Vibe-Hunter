@@ -12,7 +12,6 @@ app.get("/", (req, res) => {
 });
 app.post("/submit", (req, res) => {
   try {
-    runPythonScript('welcome.py', ["Divyam",23]);
     const playlist_link = req.body.link;
     console.log("link :", playlist_link);
     runPythonScript('scraper.py', [playlist_link]);
