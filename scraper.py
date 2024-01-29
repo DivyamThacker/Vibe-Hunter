@@ -6,6 +6,8 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import sys
 from selenium.webdriver.chrome.options import Options
+from  download import download
+
 
 playlist_link = sys.argv[1]
 
@@ -71,3 +73,5 @@ for song in song_names:
 driver.quit()  # Close the browser at the end
 
 print(song_links)
+for song_link in song_links:
+    download(song_link)

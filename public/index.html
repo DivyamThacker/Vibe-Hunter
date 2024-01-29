@@ -3,14 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Downloadify</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Workbench&display=swap" rel="stylesheet">
+    <title>Vibe Hunter</title>
 </head>
-<body style="background-color:rgb(150, 150, 237);">
-    <h1 style=" width:100%; margin:auto;">Enter the link of the playlist of the songs that you want to download</h1>
+<body style="display: flex; align-items: center; flex-direction: column; justify-content: center;" > 
+    <div style="display: flex; flex-direction: row; align-items: center;">
+    <h1 class="crafty" style="display: flex; align-items: center; flex-direction: row; justify-content: center; font-size: 50px;"> Vibe Hunter</h1>
+    <img src="img/spotify.png" alt="spotify icon" width="75px" height="75px" style="background: transparent; margin-left: 30px;">
+    </div>
+    <h1 style=" width:70%; margin-bottom: 20px;">Enter the URL of your Spotify playlist to download all the songs!!</h1>
     <form action="/submit" method= "POST" style="display: flex; flex-direction: column; width:100%; justify-content: center; align-items: center;">
         <input id="link" name="link" type="text" placeholder="Enter the link... " style="background-color: rgb(229, 226, 226); width:300px; border: 10px; border-radius: 5%; padding: 10px; margin:10px;"> </input>
-        <button style="background-color: green; border: none; padding: 10px; margin:10px;width:200px; border: 10px; border-radius: 5%;">Download</button>
+        <button type="submit" class="button cta" style="margin-top: 25px;">Download</button>
     </form>
-    <script  type="module" src="index.js"></script>
+    <p class="typewriter" style="font: bolder; font-size: 25px;">Download Now...</p>
+    <img src="img/animated_1-removebg-preview.png" width="450px" alt="music animation" style="background-color: transparent;">
+<script src="../index.js"></script>
 </body>
 </html>

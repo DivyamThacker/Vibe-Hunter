@@ -1,0 +1,57 @@
+  body {
+    background-image: radial-gradient(
+      circle at top left,
+      #7061cf    0%,
+      #3F5E81   50%,
+      #192734   100%
+    );
+    color: #F0F4F8; /* Base text color */
+    font-family: "Raleway", sans-serif;
+  }
+  
+
+  .crafty{
+    font-family: 'Workbench', sans-serif;
+  }
+  /* Apply Raleway Black for headings and titles */
+  h1, h2, h3 {
+    font-family: "Raleway Black", sans-serif;
+  }
+  
+  /* Use Dancing Script for specific emphasis */
+  .dancing-script {
+    font-family: "Dancing Script", cursive;
+  }
+  
+  /* Apply crimson for buttons and CTAs */
+  .button, .cta {
+    background-color: #00C7C1;
+    color: #333333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .typewriter {
+    overflow: hidden; /* Hides the overflowing text */
+    border-right: .15em solid white; /* Cursor-like line */
+    white-space: nowrap; /* Prevents text wrapping */
+    letter-spacing: .15em; /* Adds spacing between letters */
+    animation: typing 3s steps(40, end) infinite, blink-caret 1s step-end infinite;
+  }
+  
+  /* Keyframes for the typing animation */
+  @keyframes typing {
+    0% { width: 0 }
+    50% { width: 16% }
+
+    70% { width: 16% }
+    100%{width:0%}
+  }
+  /* Keyframes for the cursor blinking animation */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white }
+  }
+  
